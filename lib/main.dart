@@ -44,7 +44,7 @@ class _MyAppState extends State<Splash> {
                   fit: BoxFit.fill)),
           //color: Color(0xff3a70c3),
           child: Column(
-            
+
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
