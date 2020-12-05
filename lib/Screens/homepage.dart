@@ -8,10 +8,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // appBar: AppBar(
-        //   title: Text('Home'),
-        //   backgroundColor: Color(0xff395b44),
-        // ),
+         appBar: AppBar(
+          title: Text('Home'),
+           backgroundColor: Color(0xff395b44),
+        ),
         body: SafeArea(
       child: Container(
         constraints: BoxConstraints.expand(),
@@ -133,6 +133,38 @@ class HomePage extends StatelessWidget {
                   ),
                   SizedBox(
                     height: 10,
+                  ),
+                                    GestureDetector(
+                    child: Card(
+                      elevation: 18.0,
+                      child: ListTile(
+                        leading: Image.asset("assets/vegetarian.png"),
+                        title: Text(
+                          'Medical',
+                          style: GoogleFonts.abel(
+                            textStyle: TextStyle(
+                              color: Colors.black,
+                              fontSize: 25,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                        contentPadding:
+                            EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                      ),
+                      color: Color(0xffceca86),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(55),
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Edible(),
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
