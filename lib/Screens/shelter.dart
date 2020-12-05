@@ -29,7 +29,7 @@ class Shelter extends StatelessWidget {
                         width: 400,
                         child: Card(
                           child: Image.asset(
-                            'assets/location.png',
+                            'assets/fire.jpg',
                             fit: BoxFit.fill,
                           ),
                           shape: RoundedRectangleBorder(
