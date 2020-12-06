@@ -89,10 +89,10 @@ class ShelterState extends State<Shelter> {
                                                           padding:
                                                               EdgeInsets.only(
                                                                   top: 20.0)),
-                                                      // Image(
-                                                      //   image: NetworkImage(
-                                                      //       'https://i.pinimg.com/originals/d9/52/47/d95247506f1e90c2c95757572b13b70e.jpg'),
-                                                      // )
+                                                      Image(
+                                                        image: NetworkImage(
+                                                            'https://img.wonderhowto.com/img/31/21/63462005808507/0/start-fire-with-water.w1456.jpg'),
+                                                      )
                                                     ],
                                                   ),
                                                 ),

@@ -48,9 +48,9 @@ class MedicineState extends State<Medicine> {
                                         child: Column(
                                           children: [
                                             Text(
-                                              "How to do CPR on child",
+                                              "How to do CPR ",
                                               style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: Colors.black,
                                                   fontSize: 36),
                                             )
                                           ],
@@ -120,7 +120,7 @@ class MedicineState extends State<Medicine> {
                                             Text(
                                               "How to Use AED's",
                                               style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: Colors.black,
                                                   fontSize: 36),
                                             )
                                           ],
@@ -190,7 +190,7 @@ class MedicineState extends State<Medicine> {
                                             Text(
                                               "What to keep in your first-aid kit",
                                               style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: Colors.black,
                                                   fontSize: 36),
                                             )
                                           ],
