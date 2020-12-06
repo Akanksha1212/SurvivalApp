@@ -65,7 +65,44 @@ class ShelterState extends State<Shelter> {
                                   ),
                                 ),
                                 onTap: () {
-                                  null;
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return new SingleChildScrollView(
+                                        child: new ConstrainedBox(
+                                          constraints: new BoxConstraints(),
+                                          child: new Container(
+                                            child: new Center(
+                                              child: Dialog(
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            20.0)),
+                                                child: Container(
+                                                  padding: EdgeInsets.all(20),
+                                                  margin: EdgeInsets.all(20),
+                                                  child: Column(
+                                                    children: [
+                                                      Text(
+                                                          'Probably the “easiest” way (without matches/lighter/flame thrower) is the use of friction. One of the most famous ways to start a fire without a match is also one of the most difficult: using friction. To use this method, make a v-shaped notch in a board or log, and choose a spindle that will create the friction. Rub the spindle between your hands as fast as you can, moving your hands up and down the spindle rapidly. When the board or log begins to smoke, use your tinder nest to catch the glowing spark you\'ve produced.'),
+                                                      new Padding(
+                                                          padding:
+                                                              EdgeInsets.only(
+                                                                  top: 20.0)),
+                                                      // Image(
+                                                      //   image: NetworkImage(
+                                                      //       'https://i.pinimg.com/originals/d9/52/47/d95247506f1e90c2c95757572b13b70e.jpg'),
+                                                      // )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
                                 }),
                             SizedBox(
                               height: 10,

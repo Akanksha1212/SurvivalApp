@@ -134,7 +134,41 @@ class MedicineState extends State<Medicine> {
                                     margin: EdgeInsets.all(10),
                                   ),
                                 ),
-                                onTap: () {}),
+                                onTap: () {
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return new SingleChildScrollView(
+                                        child: new ConstrainedBox(
+                                          constraints: new BoxConstraints(),
+                                          child: new Container(
+                                            child: new Center(
+                                              child: Dialog(
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            20.0)),
+                                                child: Column(
+                                                  children: [
+                                                    Text(''),
+                                                    new Padding(
+                                                        padding:
+                                                            EdgeInsets.only(
+                                                                top: 20.0)),
+                                                    Image(
+                                                      image: NetworkImage(
+                                                          'https://i.pinimg.com/originals/d9/52/47/d95247506f1e90c2c95757572b13b70e.jpg'),
+                                                    )
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
+                                }),
                             SizedBox(
                               height: 10,
                             ),
@@ -171,7 +205,43 @@ class MedicineState extends State<Medicine> {
                                   ),
                                 ),
                                 onTap: () {
-                                  null;
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return new SingleChildScrollView(
+                                        child: new ConstrainedBox(
+                                          constraints: new BoxConstraints(),
+                                          child: new Container(
+                                            child: new Center(
+                                              child: Dialog(
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            20.0)),
+                                                child: Container(
+                                                  padding: EdgeInsets.all(20),
+                                                  margin: EdgeInsets.all(20),
+                                                  child: Column(
+                                                    children: [
+                                                      Text(''),
+                                                      new Padding(
+                                                          padding:
+                                                              EdgeInsets.only(
+                                                                  top: 20.0)),
+                                                      Image(
+                                                        image: NetworkImage(
+                                                            'https://i.pinimg.com/originals/d9/52/47/d95247506f1e90c2c95757572b13b70e.jpg'),
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
                                 }),
                           ],
                         ),

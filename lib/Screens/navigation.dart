@@ -65,7 +65,48 @@ class NavigationState extends State<Navigation> {
                                   ),
                                 ),
                                 onTap: () {
-                                  null;
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return new SingleChildScrollView(
+                                        child: new ConstrainedBox(
+                                          constraints: new BoxConstraints(),
+                                          child: new Container(
+                                            child: new Center(
+                                              child: Dialog(
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            20.0)),
+                                                child: Container(
+                                                  padding: EdgeInsets.all(20),
+                                                  margin: EdgeInsets.all(20),
+                                                  child: Column(
+                                                    children: [
+                                                      new Padding(
+                                                          padding:
+                                                              EdgeInsets.only(
+                                                                  top: 20.0)),
+                                                      Text(
+                                                          'The easiest method for finding the North Star is by finding the ‘Plough’, an easy to identify group of seven stars. It is known as the ‘Big Dipper’ to the Americans and the ‘saucepan’ to many others. Next you find the ‘pointer’ stars, these are the two stars that a liquid would run off if you tipped up your ‘saucepan’. The North Star will always be five times the distance between these two pointers in the direction that they point (up away from the pan). True north lies directly under this star.'),
+                                                      new Padding(
+                                                          padding:
+                                                              EdgeInsets.only(
+                                                                  top: 20.0)),
+                                                      Image(
+                                                        image: NetworkImage(
+                                                            'https://www.naturalnavigator.com/wp-content/uploads/2018/10/star_final.gif'),
+                                                      )
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  );
                                 }),
                             SizedBox(
                               height: 10,
