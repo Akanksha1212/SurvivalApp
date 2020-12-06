@@ -15,6 +15,7 @@ class ShelterState extends State<Shelter> {
       child: Scaffold(
           appBar: AppBar(
             title: const Text('Shelter'),
+            backgroundColor: Color(0xff395b44),
           ),
           key: scaffoldKey,
           backgroundColor: Color(0xff9ad7e9),
@@ -113,22 +114,25 @@ class ShelterState extends State<Shelter> {
                                   width: 400,
                                   child: Card(
                                     child: Container(
-                                      constraints: BoxConstraints.expand(),
-                                      decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  'assets/wild.jpg'),
-                                              //
-                                              fit: BoxFit.cover)),
-                                      child: Column(
-                                        children: [
-                                          Text("How To escape from Wild Animals", 
-                                          style: TextStyle(color: Colors.white, fontSize: 36),
-                                          )
-                                        ],
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                      )
-                                    ),
+                                        constraints: BoxConstraints.expand(),
+                                        decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    'assets/wild.jpg'),
+                                                //
+                                                fit: BoxFit.cover)),
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "How To escape from Wild Animals",
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 36),
+                                            )
+                                          ],
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                        )),
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20.0),
                                     ),
@@ -148,22 +152,25 @@ class ShelterState extends State<Shelter> {
                                   width: 400,
                                   child: Card(
                                     child: Container(
-                                      constraints: BoxConstraints.expand(),
-                                      decoration: BoxDecoration(
-                                          image: DecorationImage(
-                                              image: AssetImage(
-                                                  'assets/food.jpg'),
-                                              //
-                                              fit: BoxFit.cover)),
-                                      child: Column(
-                                        children: [
-                                          Text("How to eat Food in the Wild", 
-                                          style: TextStyle(color: Colors.white, fontSize: 36),
-                                          )
-                                        ],
-                                        mainAxisAlignment: MainAxisAlignment.center,
-                                      )
-                                    ),
+                                        constraints: BoxConstraints.expand(),
+                                        decoration: BoxDecoration(
+                                            image: DecorationImage(
+                                                image: AssetImage(
+                                                    'assets/food.jpg'),
+                                                //
+                                                fit: BoxFit.cover)),
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "How to eat Food in the Wild",
+                                              style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 36),
+                                            )
+                                          ],
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                        )),
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20.0),
                                     ),

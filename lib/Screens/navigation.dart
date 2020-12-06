@@ -15,6 +15,7 @@ class NavigationState extends State<Navigation> {
       child: Scaffold(
           appBar: AppBar(
             title: const Text('Navigation'),
+            backgroundColor: Color(0xff395b44),
           ),
           key: scaffoldKey,
           backgroundColor: Color(0xff9ad7e9),

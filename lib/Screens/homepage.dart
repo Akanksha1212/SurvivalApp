@@ -156,11 +156,11 @@ class HomePageState extends State<HomePage> {
                       SizedBox(
                         height: 10,
                       ),
-                     GestureDetector(
+                      GestureDetector(
                         child: Card(
                           elevation: 18.0,
                           child: ListTile(
-                            leading: Image.asset("assets/location.png"),
+                            leading: Image.asset("assets/healthcare.png"),
                             title: Text(
                               'Medical',
                               style: GoogleFonts.abel(
@@ -244,7 +244,6 @@ class NavDrawer extends StatelessWidget {
                     title: Text('Logout'),
                     onTap: () => {Navigator.of(context).pop()},
                   ),
-                    
                 ],
               ),
             ],
