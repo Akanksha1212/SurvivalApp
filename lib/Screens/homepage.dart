@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ttny/Screens/edible.dart';
+import 'package:ttny/Screens/medicine.dart';
 import 'package:ttny/Screens/navigation.dart';
 import 'package:ttny/Screens/shelter.dart';
 
@@ -182,7 +183,7 @@ class HomePageState extends State<HomePage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Navigation(),
+                              builder: (context) => Medicine(),
                             ),
                           );
                         },
